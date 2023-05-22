@@ -1,0 +1,1 @@
+=IF(REGEXMATCH(A2, "fatbeam"), 1, 0)
