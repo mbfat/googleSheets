@@ -1,0 +1,27 @@
+
+
+
+google sheets delete a line if no check box
+
+To delete a row in Google Sheets if the checkbox in that row is unchecked, you can use a script. Here are the steps to do it:
+
+    Insert checkboxes in the cells of the column you want to use (for example, column A).
+    Right-click the sheet tab and select "Script editor".
+    In the script editor, copy and paste the following code:
+
+function deleteUncheckedRows() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var data = sheet.getDataRange().getValues();
+  for (var i = data.length - 1; i >= 0; i--) {
+    if (data[i][0] === false) {
+      sheet.deleteRow(i + 1);
+    }
+  }
+}
+
+    Save the script and go back to the sheet.
+    Select the column where you inserted the checkboxes (for example, column A).
+    Go to "Data" > "Data validation".
+    In the "Criteria" section, select "Checkbox" and in the "Show validation help text" section, add "Tick the box to keep the row, untick to delete".
+    Click "Save".
+    Now, each time you tick or untick a checkbox, you can run the "deleteUncheckedRows" script to remove the unchecked rows.
