@@ -1,0 +1,8 @@
+
+    Open the sheet in which you want to add the hyperlink.
+    Select the cell in which you want to place the hyperlink.
+    Click "Insert" in the menu bar at the top of the page and select "Link" from the dropdown.
+    In the "Insert link" dialog box, select "Sheets in this spreadsheet".
+    Choose the sheet that you want to link to.
+    In the "Range" field, enter the range of cells that you want to link to, followed by an anchor (#) symbol and the cell reference of the line you want to link to. For example, if you want to link to cell A10 on Sheet2, you would enter Sheet2!A:10.
+    Click "Apply" to save the hyperlink.
