@@ -40,6 +40,7 @@ to delete a named range
 ---
 
 
+---
 
 examples for ai solution #1 and #2
 
@@ -67,10 +68,6 @@ The formula would look like this: =HYPERLINK("link_location","friendly_name").
 In the "link_location" field, you would enter the same cell reference as above ("Sheet Name!Cell Reference") and in the "friendly_name" field, 
     you can enter any text you want to use as the clickable link text.
 
-
-
-
-
 ---
 
 ans#1-20230620
@@ -87,5 +84,3 @@ Sheet2!A:10
         and the cell reference of the line you want to link to.
         For example, if you want to link to cell A10 on Sheet2, you would enter Sheet2!A:10.
     Click "Apply" to save the hyperlink.
-
-
