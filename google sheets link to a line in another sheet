@@ -1,3 +1,80 @@
+google sheets link to a line in another sheet
+--- my solution - 20230621.115508
+
+LINK TO (to change the link to named range or delete an entry, see below)
+    1 - go to the sheet you want to LINK TO
+    2 - select the line to link to (or cell(s))
+    3 - hit 'View more row/cell actions' (at the bottom)
+    4 - hit 'Define named range'tod
+    5 - give it a name
+    6 - grab the address below the name
+    7 - hit 'Done'
+LINK FROM
+    8 - go to the sheet you want to LINK FROM
+    9 - select a cell (only 1 cell allowed) to link from
+    10 - hit 'Insert link'
+    11 - give it a name
+    12 - paste the link (from step 6)
+    13 - hit 'Apply'
+
+now when the LINK TO sheet is updated (new lines, etc),
+the links will be updated in the LINK FROM sheet
+
+to change the link to named range
+    1 - go to the LINK TO sheet
+    2 - select the 'Data' tab
+    3 - hit 'Named ranges'
+    4 - select the pencil icon for the one to edit
+    5 - on the lower entry where the address is, click the 4 square icon
+    6 - select the new range
+    7 - hit 'Ok'
+    8 - hit 'Done'
+to delete a named range
+    1 - go to the LINK TO sheet
+    2 - select the 'Data' tab
+    3 - hit 'Named ranges'
+    4 - select the pencil icon for the one to delete
+    5 - select the garbage can icon
+    6 - hit <Enter> or 'Remove'
+    
+---
+
+
+
+examples for ai solution #1 and #2
+
+=HYPERLINK("link_location","friendly_name")
+=HYPERLINK("new emp checklist!A1","NewEmpChklst Top")
+or
+Sheet2!A:10
+
+---
+
+ans#2-20230621.114355-
+
+To link to a specific line in another sheet in Google Sheets, you can follow these steps:
+
+    Go to the cell in your sheet where you want to add the link.
+    Right-click on the cell and select "Insert link" or use the keyboard shortcut Ctrl + K.
+    In the "Link" box that appears, select "Sheets in this spreadsheet" or "Drive" depending on where the sheet you want to link to is located.
+    Find and select the sheet you want to link to.
+    In the "Cell Link" field, enter the cell reference of the specific line you want to link to in the format of "Sheet Name!Cell Reference".
+        For example, to link to cell A10 on Sheet2, you would enter "Sheet2!A10".
+    Click "Apply" to create the link.
+
+Alternatively, you can also use the HYPERLINK formula to create the link.
+The formula would look like this: =HYPERLINK("link_location","friendly_name").
+In the "link_location" field, you would enter the same cell reference as above ("Sheet Name!Cell Reference") and in the "friendly_name" field, 
+    you can enter any text you want to use as the clickable link text.
+
+
+
+
+
+---
+
+ans#1-20230620
+
 ex.
 Sheet2!A:10
 
@@ -7,6 +84,8 @@ Sheet2!A:10
     In the "Insert link" dialog box, select "Sheets in this spreadsheet".
     Choose the sheet that you want to link to.
     In the "Range" field, enter the range of cells that you want to link to, followed by an anchor (#) symbol 
-        and the cell reference of the line you want to link to. For example, if you want to link to cell A10 on Sheet2, 
-        you would enter Sheet2!A:10.
+        and the cell reference of the line you want to link to.
+        For example, if you want to link to cell A10 on Sheet2, you would enter Sheet2!A:10.
     Click "Apply" to save the hyperlink.
+
+
