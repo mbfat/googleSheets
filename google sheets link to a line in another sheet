@@ -21,14 +21,23 @@ now when the LINK TO sheet is updated (new lines, etc),
 the links will be updated in the LINK FROM sheet
 
 to change the link to named range
+LINK TO
     1 - go to the LINK TO sheet
     2 - select the 'Data' tab
     3 - hit 'Named ranges'
     4 - select the pencil icon for the one to edit
     5 - on the lower entry where the address is, click the 4 square icon
     6 - select the new range
-    7 - hit 'Ok'
-    8 - hit 'Done'
+    7 - copy the new range
+    8 - hit 'Ok'
+    9 - hit 'Done'
+LINK FROM - you will then need to change it in the LINK FROM sheet
+    10 - go to the LINK FROM sheet
+    11 - hover over the linking cell
+    12 - click the pencil icon to 'Edit link'
+    13 - paste the link (from step 7)
+    14 - hit 'Apply'
+
 to delete a named range
     1 - go to the LINK TO sheet
     2 - select the 'Data' tab
